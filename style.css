@@ -30,7 +30,7 @@ div.board_menu span {
 }
 
 div.board_menu span.turn {
-    background-color: #fcb;
+    background-color: rgb(169, 250, 166);
 }
 
 div.board_menu input {
@@ -89,11 +89,11 @@ div.hide_ships div.ship {
 }
 
 div.board div.miss {
-    background-color: #f00;
+    background-color: rgb(101, 164, 245);
 }
 
 div.board div.hit {
-    background-color: #88f;
+    background-color: rgb(255, 0, 0);
 }
 
 
