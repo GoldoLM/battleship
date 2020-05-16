@@ -1,0 +1,103 @@
+body {
+    font: 14px Verdana;
+}
+
+/* CSS for menu */
+div.menu {
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* CSS for board layout */
+div.board_container, div.board, div.board div {
+    float: left;
+}
+
+div.board_container {
+    margin-right: 30px;
+}
+
+div.board_menu {
+    text-align: center;
+    padding: 0 0 10px 15px;
+}
+
+div.board_menu span {
+    border: 1px solid;
+    padding: 1px 20px;
+    display: block;
+}
+
+div.board_menu span.turn {
+    background-color: #fcb;
+}
+
+div.board_menu input {
+    display: none;
+    font: inherit;
+    text-align: center;
+    border-width: 1px 0;
+    border-style: dotted;
+    padding: 1px 0;
+    margin: 0;
+    background-color: #ff0;
+    width: 100%;
+}
+
+div.board div div {
+    float: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 30px;
+    height: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/*div.board:first-of-type div div {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+div.board:nth-of-type(1) div div {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}*/
+
+div.board div:first-child div {
+    border-bottom-color: transparent;
+    width: 15px;
+}
+
+div.board div div:first-child {
+    border-right-color: transparent;
+    height: 20px;
+    text-align: center;
+}
+
+
+/* CSS for board cells */
+div.board div.ship {
+    background-color: #00f;
+}
+
+div.hide_ships div.ship {
+    background-color: inherit;
+}
+
+div.board div.miss {
+    background-color: #f00;
+}
+
+div.board div.hit {
+    background-color: #88f;
+}
+
+
+/* Random shot button only when game started */
+#random_shot {
+    display: none;
+}
